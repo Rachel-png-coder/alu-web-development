@@ -1,42 +1,93 @@
-body, main {
+/* Flexbox layout for body and main */
+body {
     display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Dark text color */
 }
 
 main {
+    display: flex;
     flex-direction: row;
+    flex: auto;
+    padding: 20px;
 }
 
-main {
-    flex: auto;
+/* Header and Navigation Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2em; /* Makes the logo character bigger */
+    color: gold; /* Color of the logo character */
+    margin-right: 20px;
+}
+
+/* Article and Aside Styling */
 article {
     flex: 2;
-    overflow-y: auto
+    background-color: white;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 aside {
     flex: 1;
-    overflow-y: auto
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-y: auto;
 }
 
-html {
-    background-color: whitesmoke;
-    font-family: sans-serif;
-    font-size: medium;
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-main,aside {
-    font-size: medium;
-}
+/* Responsive styling for smaller devices */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
 
-h1 {
-    color: orange;
-}
-
-footer{
-    color: blueviolet;
-}
-
-article {
-    margin: auto;
+    article, aside {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }

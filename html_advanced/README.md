@@ -1,5 +1,7 @@
 HTML Advanced Project
 
+https://github.com/Rachel-png-coder/alu-web-development/blob/f2a18afa2188393beda7df8d0e4bf5240eaada84/html_advanced/Screenshot%202025-01-15%20051822.png
+
 The goal of this project is to implement a webpage from a designer file, focusing solely on the HTML structure. No CSS or styles will be applied in this phase—the emphasis is on creating a clean, semantic, and well-structured HTML document. This project is part of a series that aims to build advanced web development skills by progressively adding layers of functionality and design.
 
 Implement Semantic HTML: Use semantic HTML5 elements to structure the webpage content appropriately.

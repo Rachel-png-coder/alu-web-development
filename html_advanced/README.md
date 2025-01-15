@@ -1,6 +1,6 @@
 HTML Advanced Project
 
-https://github.com/Rachel-png-coder/alu-web-development/blob/f2a18afa2188393beda7df8d0e4bf5240eaada84/html_advanced/Screenshot%202025-01-15%20051822.png
+![Screenshot 2025-01-15 051822](https://github.com/user-attachments/assets/2df63803-3143-4b4e-8ee6-f8855e7509ee)
 
 The goal of this project is to implement a webpage from a designer file, focusing solely on the HTML structure. No CSS or styles will be applied in this phase—the emphasis is on creating a clean, semantic, and well-structured HTML document. This project is part of a series that aims to build advanced web development skills by progressively adding layers of functionality and design.
 

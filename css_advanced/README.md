@@ -97,4 +97,5 @@ Figma Documentation: Figma Help Center
 
 GitHub Markdown Guide: Markdown Cheat Sheet
 
+![image](https://github.com/user-attachments/assets/6c06dc32-949f-4b48-8c2d-cf245b5c6331)
 

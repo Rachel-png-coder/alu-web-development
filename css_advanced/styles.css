@@ -1,169 +1,582 @@
-body {
-    padding: 0;
-    margin: 0;
+<style>body {
     font-family: "Source Sans Pro";
     font-style: normal;
-}
-
-header {
+  }
+  header {
     display: flex;
     flex-direction: row;
     flex: auto;
-    background-image: url("./images/banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("background.jpg");
     padding: 2% 5% 2% 5%;
-    filter: grayscale(100%);
     position: absolute;
     left: -0.025%;
     right: -0.025%;
     top: 0%;
-    justify-content: space-between;
-    bottom: -26.48%;
-    height: 100vh;
-    
-}
-
-.urls {
-    font-weight: 700;
-    font-size: 12px;
-
-}
-
-
-.urls>a {
+    bottom: -70%;
+  }
+  
+  header .logo {
+    flex: 2;
+  }
+  
+  header .btn a {
+    flex: 4;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
-    padding-right: 53px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
+    width: 234px;
+    left: 1200px;
+    top: 37px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-.leading {
+  header .btn a {
+    
+    text-decoration: none;
+    color: white;
+  }
+  .Intro {
+    
     left: 20%;
     right: 20%;
     display: flex;
     flex-direction: column;
-    margin-bottom: -2.2rem;
+    margin-bottom: -2.6rem;
     background-blend-mode: color;
     background: rgba(0, 0, 0, 1);
-    background: radial-gradient(85.9% 85.9% at 50% 14.1%,
-            rgba(41, 48, 61, 0.0001) 0%,
-            #071629 100%);
+    background: radial-gradient(
+      85.9% 85.9% at 50% 14.1%,
+      rgba(41, 48, 61, 0.0001) 0%,
+      #071629 100%
+    );
     color: white;
-}
+  }
 
-.learn {
+  .Schooled {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
-}
+    padding-top: 80px;
+  }
 
-.learn>h1 {
+  .main-title {
     height: 151px;
     font-weight: 700;
     font-size: 120px;
-    line-height: 151px;
+    line-height: 150.84px;
     text-align: center;
-    color: #ffffff;
-    z-index: 20;
-}
-
-.learn>p {
+    color: rgb(255, 255, 255);
+  }
+  
+  .sub-title {
     height: 20px;
     position: relative;
-    margin-top: -5%;
+    margin-top: -8%;
     text-align: center;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 20.11px;
     color: #ffffff;
     display: flex;
     justify-content: space-around;
     margin-left: 38%;
     margin-right: 38%;
-}
-
-.learn>button {
+  }
+  
+  .button {
     background: #c271ff;
     border-radius: 25px;
     border: none;
-    padding: 0.7rem;
+    padding: 11.2px;
     color: white;
     font-weight: 500;
-    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0px 1px 20px rgba(0, 0, 0, 0.5));
     position: relative;
     align-self: center;
-    margin: 2rem;
-    padding: 1rem;
-}
-
-.dcolor {
-    color: #c271ff;
-}
-
-.courses {
-    padding: 1%;
+    margin: 32px;
+    padding: 16px;
+    
+  }
+  
+  .add-color {
+    color: rgb(194, 113, 255);
+  }
+  .Learn {
+    padding: 2%;
     display: flex;
     flex-direction: column;
-    z-index: 20;
-}
-
-.courses>h2 {
+  }
+  .Learn-title {
+    position: relative;
     align-self: center;
-    padding: 2rem;
+    padding: 32px;
     font-weight: 300;
     line-height: 40px;
-}
-
-.courses .dcolor {
+  }
+  .Learn-title .add-color {
     font-weight: 700;
-}
-
-.testim {
+  }
+  .Instructors {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.testimCard {
-    width: 20%;
+  }
+  .instructor {
+    width: 19%;
     margin-bottom: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.testimCard>img {
+  }
+  .Instructors img {
     border-radius: 50%;
     max-width: 80%;
-}
-
-.testimCard > h3 {
-    font-style: normal;
+  }
+  .instructor h3 {
     font-weight: 900;
     font-size: 18px;
-    line-height: 27px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
     text-align: center;
-    color: #FFFFFF;
-}
-
-.testimCard>p {
-    height: 48px;
-    font-family: 'Source Sans Pro';
+  }
+  .instructor p {
     font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
-}
-main{
+    font-size: 16px;
+  }
+  main {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: -8px;
+  }
+  
+  .presenter-quote {
+    background-color: #c271ff;
+    padding: 6%;
+  }
+  .quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+  .quote img {
+    width: 160px;
+    height: 160px;
+    margin-right: 3rem;
+  }
+  .quote blockquote {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    margin-left: 0;
+  }
+  .quote .person {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 0;
+  }
+  .quote .weather {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    margin-top: 0;
+  }
+  .short-videos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .short-videos h1,
+  .memberships h1,
+  .F.A.Q h1 {
+    text-align: center;
+  }
+  .short-videos h1 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .F.A.Q h1 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .video-image {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 15%;
+  }
+  .video-image h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0.1rem;
+  }
+  .video-image .video-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+  }
+  
+  .video-image .author {
+    display: flex;
+    align-items: center;
+  }
+  .author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .author h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    color: #c271ff;
+    margin-left: 1rem;
+  }
+  .stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .time {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: right;
+    color: #c271ff;
+  }
+  .memberships {
+    color: white;
+    background: #071629;
+    padding: 2rem;
+    width: 1440px;
+    height: 502px;
+
+
+  }
+  .memberships .add-color,
+  .short-videos .add-color {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .memberships h1 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+  .memberships button {
+    left: 42%;
+    left: 42.38%;
+    right: 45.38%;
+    top: 41.90%;
+    bottom: 20.36%;
+  }
+  .Becomx-member {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .Members h2 {
+    margin-bottom: 0.1rem;
+  }
+
+  .Members1 {
+    position: absolute;
+    left: 11.39%;
+    right: 70.76%;
+    bottom: 30.50%;
+
+  }
+
+  .Members2 {
+    position: absolute;
+    left: 31.11%;
+    right: 51.04%;
+    bottom: 30.50%;
+  }
+
+  .Members3 {
+    position: absolute;
+    left: 50.9%;
+    right: 31.25%;
+    bottom: 30.50%;
+
+  }
+
+  .Members4 {
+    position: absolute;
+    left: 70.76%;
+    right: 11.39%;
+    bottom: 30.50%;
+  }
+  
+
+  .FAQ h1 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+
+    color: #071629;
+
+  }
+  
+  .faq {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .faq-text {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    width: 50%;
+    padding: 5%;
+  }
+  footer {
+    background: black;
+    padding: 1rem;
+    margin: -8px;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-ft {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 8rem 4rem 8rem;
+  }
+  
+  .nav-ft div a {
+    margin-left: 0.4rem;
+    margin-right: 0.5rem;
+  }
+  
+  .foot p {
+    color: white;
+    opacity: 0.35;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .profile {
+    display: inline-block;
+    margin: 10px; /* Add margin for spacing between profiles */
 }
+.centered-profiles {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 110px; /* Add margin to push the content down */
+}
+.rounded-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire circle */
+}
+.testimonial-section {
+    background: #C271FF; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire circle */
+}
+
+.testimonial div {
+    margin-left: 20px; /* Add margin for spacing between the image and content */
+}
+
+/* Add any additional styles you need */
+.top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .top-right a {
+            margin-left: 10px;
+        }
+        .register-button {
+            background-color: #C271FF; /* Background color */
+            color: white; /* Text color */
+            padding: 10px 20px; /* Padding for button */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add rounded corners */
+            font-weight: bold; /* Make text bold */
+            cursor: pointer; /* Add a pointer cursor on hover */
+        
+        }
+        .header {
+            padding: 10px; /* Padding for the header */
+            text-align: center; /* Center-align the text */}
+
+        .header h2 {     .center-text {
+            text-align: center; /* Center-align the text */
+        }
+
+        .center-text h1 {
+            font-size: 24px; /* Adjust the font size */
+        }
+
+        .center-text span {
+            font-size: 18px; /* Adjust the font size for the span */
+        }
+            font-size: 24px; /* Adjust the font size */
+            font-weight: bold; /* Make text bold */
+            margin: 0; /* Remove margin to align with the padding */
+        }
+
+        .header span {
+            font-size: 18px; /* Adjust the font size for the span */
+        }
+        .center-text {
+            text-align: center; /* Center-align the text */
+        }
+
+        .center-text h1 {
+            font-size: 24px; /* Adjust the font size */
+        }
+
+        .center-text span {
+            font-size: 18px; /* Adjust the font size for the span */
+        }
+        .section-container {
+    display: flex;
+    justify-content: start; /* Distribute sections evenly */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+}
+
+.section {
+    width: calc(300px); /* Set the width for each section (adjust as needed) */
+    padding: 10px; /* Add spacing between sections */
+    text-align: center; /* Center-align section content */
+    margin-bottom: 20px; /* Add margin at the bottom of each section */
+    background; /* Background color */
+}
+.center-text {
+    text-align: center; /* Center-align the text */
+}
+
+.center-text h1 {
+    font-size: 50px; /* Adjust the font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.center-text span {
+    color: ; /* Change the color of the span text */
+}
+.horizontal-section-container {
+    display: flex;
+    justify-content: center; /* Distribute sections evenly */
+    flex-wrap: nowrap; /* Allow wrapping to the next line if necessary */
+    margin-right: 10%;
+}
+
+.horizontal-section {
+    width: calc(200px); /* Set the width for each section (adjust as needed) */
+    padding: 10px; /* Add spacing between sections */
+    text-align: center; /* Center-align section content */
+    margin-bottom: 20px; /* Add margin at the bottom of each section */
+    border: 1px solid ; /* Add a border to each section */
+    background-color: /* Add a background color to each section */
+}
+.center-button {
+    text-align: center; /* Center-align the button */
+}
+
+.center-button button {
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #C271FF; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+.custom-background {
+    background: #071629; /* Background color */
+    color: white; /* Text color */
+    padding: 5px; /* Add padding for spacing */
+}
+.center-elements {
+    text-align: center; /* Center-align the elements */
+}
+
+.center-elements h1 {
+    font-size: 24px; /* Adjust the font size for the h1 element */
+    font-weight: bold; /* Make text bold */
+}
+
+.center-elements div {
+    /* Styles for the content inside the div if needed */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+.grid-item {
+    border: /* Add a border to each grid item */
+    padding: 20px; /* Add padding to each grid item */
+    background-color: /* Background color for each grid item */
+}
+.float-right {
+    float: right;
+}
+.top-right a {
+        color: white; /* Set link color to white */
+        text-decoration: none; /* Remove underlines from links, if needed */
+        margin-right: 20px; /* Add spacing between links, adjust as needed */
+    }
+    .header h2 {
+        text-align: center; /* Center-align the text */
+        margin-top: 40px; /* Adjust the top margin to move the text downward */
+    }
+
+    .header h2 span {
+        color: #C271FF; /* Change the color of "Learn" to #C271FF */
+        font-size: 25px;
+    }
+
+    .header h2 span + * {
+        color: white; /* Change the color of "from the pros" to white */
+        font-size: 20px;
+    }
